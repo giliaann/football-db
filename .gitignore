@@ -3,3 +3,6 @@
 
 # maven
 target/
+
+# IntelliJ
+.idea/
