@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd"
+             version="3.2">
+    <persistence-unit name="football" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>pl.football.seeder.entity.AuditedEntity</class>
+        <class>pl.football.seeder.entity.Appearance</class>
+        <class>pl.football.seeder.entity.Coach</class>
+        <class>pl.football.seeder.entity.Competition</class>
+        <class>pl.football.seeder.entity.Currency</class>
+        <class>pl.football.seeder.entity.Edition</class>
+        <class>pl.football.seeder.entity.EditionParticipation</class>
+        <class>pl.football.seeder.entity.Editor</class>
+        <class>pl.football.seeder.entity.EventType</class>
+        <class>pl.football.seeder.entity.Foot</class>
+        <class>pl.football.seeder.entity.Injury</class>
+        <class>pl.football.seeder.entity.Match</class>
+        <class>pl.football.seeder.entity.MatchEvent</class>
+        <class>pl.football.seeder.entity.Permission</class>
+        <class>pl.football.seeder.entity.PermissionAssignment</class>
+        <class>pl.football.seeder.entity.Player</class>
+        <class>pl.football.seeder.entity.Referee</class>
+        <class>pl.football.seeder.entity.Region</class>
+        <class>pl.football.seeder.entity.Stadium</class>
+        <class>pl.football.seeder.entity.Stage</class>
+        <class>pl.football.seeder.entity.Team</class>
+        <class>pl.football.seeder.entity.TeamSquad</class>
+        <class>pl.football.seeder.entity.Transfer</class>
+        <class>pl.football.seeder.entity.TransferType</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <!-- ddl_script.sql owns the schema: only check that the entities match it. -->
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+        </properties>
+    </persistence-unit>
+</persistence>
