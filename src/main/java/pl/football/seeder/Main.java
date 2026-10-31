@@ -30,7 +30,7 @@ public final class Main {
              EntityManager em = emf.createEntityManager()) {
             seeded = isDatabaseEmpty(em);
             if (seeded) {
-                seed(em);
+                seed(em, args.length > 0 && args[0].equals("random"));;
                 printRowCounts(em, emf);
             }
         }
@@ -64,11 +64,15 @@ public final class Main {
         return em.createQuery("select count(e) from Editor e", Long.class).getSingleResult() == 0;
     }
 
-    private static void seed(EntityManager em) {
+    private static void seed(EntityManager em, boolean random) {
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try {
-            new TestDataSeeder(em).seedAll();
+            if (random) {
+                new DataSeeder(em, 42L).seedAll();
+            } else {
+                new TestDataSeeder(em).seedAll();
+            }
             tx.commit();
         } catch (RuntimeException e) {
             if (tx.isActive()) {
