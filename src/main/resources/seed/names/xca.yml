@@ -1,0 +1,5 @@
+xca:
+  faker:
+    name:
+      male_first_name: [Abbos, Abdukodir, Aziz, Bakhtiyor, Bobir, Dostonbek, Eldor, Farrukh, Igor, Islom, Jaloliddin, Khojiakbar, Nodirbek, Odiljon, Otabek, Rustam, Sherzod, Temur, Ulugbek, Utkir, Zafar]
+      last_name: [Abdukholiqov, Alijonov, Ashurmatov, Erkinov, Fayzullaev, Khamdamov, Khusanov, Masharipov, Nazarov, Nematov, Rakhimov, Rashidov, Sayfiev, Shomurodov, Shukurov, Tursunov, Urunov, Yusupov]

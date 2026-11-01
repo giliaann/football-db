@@ -13,7 +13,14 @@ import java.util.Map;
 /** Inserts the test data set into an empty database, in a single transaction. */
 public final class Main {
 
+    private static final String RANDOM = "random";
+    private static final long DEFAULT_SEED = 42L;
+
     private Main() {
+    }
+
+    private static long seedFrom(String[] args) {
+        return args.length > 1 ? Long.parseLong(args[1]) : DEFAULT_SEED;
     }
 
     public static void main(String[] args) {
@@ -30,7 +37,7 @@ public final class Main {
              EntityManager em = emf.createEntityManager()) {
             seeded = isDatabaseEmpty(em);
             if (seeded) {
-                seed(em, args.length > 0 && args[0].equals("random"));;
+                seed(em, args);
                 printRowCounts(em, emf);
             }
         }
@@ -64,12 +71,12 @@ public final class Main {
         return em.createQuery("select count(e) from Editor e", Long.class).getSingleResult() == 0;
     }
 
-    private static void seed(EntityManager em, boolean random) {
+    private static void seed(EntityManager em, String[] args) {
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try {
-            if (random) {
-                new DataSeeder(em, 42L).seedAll();
+            if (args.length > 0 && args[0].equals(RANDOM)) {
+                new DataSeeder(em, seedFrom(args)).seedAll();
             } else {
                 new TestDataSeeder(em).seedAll();
             }

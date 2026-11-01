@@ -1,0 +1,113 @@
+# name;fifa_code;founded;confederation;name_culture
+Poland;POL;1919;UEFA;pl
+Spain;ESP;1909;UEFA;es
+Italy;ITA;1898;UEFA;it
+Germany;GER;1900;UEFA;de
+France;FRA;1919;UEFA;fr
+England;ENG;1863;UEFA;en
+Scotland;SCO;1873;UEFA;en
+Wales;WAL;1876;UEFA;en
+Northern Ireland;NIR;1880;UEFA;en
+Republic of Ireland;IRL;1921;UEFA;en
+Portugal;POR;1914;UEFA;pt
+Netherlands;NED;1889;UEFA;nl
+Belgium;BEL;1895;UEFA;nl
+Croatia;CRO;1912;UEFA;hr
+Serbia;SRB;1919;UEFA;hr
+Slovenia;SVN;1920;UEFA;hr
+Bosnia and Herzegovina;BIH;1992;UEFA;hr
+Montenegro;MNE;1931;UEFA;hr
+Switzerland;SUI;1895;UEFA;de
+Austria;AUT;1904;UEFA;de
+Czech Republic;CZE;1901;UEFA;cs
+Slovakia;SVK;1938;UEFA;sk
+Hungary;HUN;1901;UEFA;hu
+Romania;ROU;1909;UEFA;ro
+Albania;ALB;1930;UEFA;sq
+Ukraine;UKR;1991;UEFA;xeu
+Denmark;DEN;1889;UEFA;da
+Sweden;SWE;1904;UEFA;sv
+Norway;NOR;1902;UEFA;no
+Finland;FIN;1907;UEFA;fi
+Estonia;EST;1921;UEFA;et
+Iceland;ISL;1947;UEFA;sv
+Georgia;GEO;1990;UEFA;xge
+Greece;GRE;1926;UEFA;xgr
+Turkey;TUR;1923;UEFA;tr
+Israel;ISR;1928;UEFA;xil
+Argentina;ARG;1893;CONMEBOL;es
+Brazil;BRA;1914;CONMEBOL;pt
+Uruguay;URU;1900;CONMEBOL;es
+Colombia;COL;1924;CONMEBOL;es
+Chile;CHI;1895;CONMEBOL;es
+Paraguay;PAR;1906;CONMEBOL;es
+Peru;PER;1922;CONMEBOL;es
+Ecuador;ECU;1925;CONMEBOL;es
+Venezuela;VEN;1926;CONMEBOL;es
+Bolivia;BOL;1925;CONMEBOL;es
+United States;USA;1913;CONCACAF;en
+Mexico;MEX;1927;CONCACAF;es
+Canada;CAN;1912;CONCACAF;en
+Costa Rica;CRC;1921;CONCACAF;es
+Panama;PAN;1937;CONCACAF;es
+Jamaica;JAM;1910;CONCACAF;en
+Honduras;HON;1951;CONCACAF;es
+Haiti;HAI;1904;CONCACAF;fr
+Curaçao;CUW;1921;CONCACAF;nl
+Trinidad and Tobago;TRI;1908;CONCACAF;en
+New Zealand;NZL;1891;OFC;en
+Australia;AUS;1961;AFC;en
+Japan;JPN;1921;AFC;xjp
+South Korea;KOR;1933;AFC;xkr
+Qatar;QAT;1960;AFC;xar
+Saudi Arabia;KSA;1956;AFC;xar
+Iran;IRN;1920;AFC;xir
+Iraq;IRQ;1948;AFC;xar
+Jordan;JOR;1949;AFC;xar
+United Arab Emirates;UAE;1971;AFC;xar
+Oman;OMA;1978;AFC;xar
+Bahrain;BHR;1957;AFC;xar
+Syria;SYR;1936;AFC;xar
+Lebanon;LBN;1933;AFC;xar
+Palestine;PLE;1928;AFC;xar
+Uzbekistan;UZB;1946;AFC;xca
+Tajikistan;TJK;1936;AFC;xca
+Kyrgyzstan;KGZ;1992;AFC;xca
+China;CHN;1924;AFC;xcn
+Hong Kong;HKG;1914;AFC;xcn
+India;IND;1937;AFC;xin
+Indonesia;IDN;1930;AFC;xsa
+Malaysia;MAS;1933;AFC;xsa
+Thailand;THA;1916;AFC;xsa
+Vietnam;VIE;1960;AFC;xsa
+Morocco;MAR;1955;CAF;xar
+Algeria;ALG;1962;CAF;xar
+Tunisia;TUN;1957;CAF;xar
+Egypt;EGY;1921;CAF;xar
+Sudan;SDN;1936;CAF;xar
+Mauritania;MTN;1961;CAF;xar
+Comoros;COM;1979;CAF;xar
+Senegal;SEN;1960;CAF;xwa
+Mali;MLI;1960;CAF;xwa
+Ivory Coast;CIV;1960;CAF;xwa
+Burkina Faso;BFA;1960;CAF;xwa
+Guinea;GUI;1960;CAF;xwa
+Cameroon;CMR;1959;CAF;xwa
+DR Congo;COD;1919;CAF;xwa
+Gabon;GAB;1962;CAF;xwa
+Benin;BEN;1962;CAF;xwa
+Nigeria;NGA;1945;CAF;xea
+Ghana;GHA;1957;CAF;xea
+Gambia;GAM;1952;CAF;xea
+South Africa;RSA;1991;CAF;xea
+Zambia;ZAM;1929;CAF;xea
+Zimbabwe;ZIM;1965;CAF;xea
+Tanzania;TAN;1930;CAF;xea
+Uganda;UGA;1924;CAF;xea
+Botswana;BOT;1970;CAF;xea
+Namibia;NAM;1990;CAF;xea
+Angola;ANG;1979;CAF;pt
+Mozambique;MOZ;1976;CAF;pt
+Cape Verde;CPV;1982;CAF;pt
+Guinea-Bissau;GNB;1974;CAF;pt
+Equatorial Guinea;EQG;1960;CAF;es

@@ -1,0 +1,5 @@
+xsa:
+  faker:
+    name:
+      male_first_name: [Agung, Asnawi, Arif, Bagus, Dinh, Duy, Egy, Hoang, Justin, Kevin, Malik, Marselino, Nguyen, Paul, Quang, Rafael, Ricky, Sandy, Supachai, Sarach, Syafiq, Teerasil, Thanawat, Tuan, Witan, Yuto]
+      last_name: [Arhan, Bach, Basri, Bunmathan, Dangda, Fakhrudin, Halim, Hubner, Hung, Ismail, Kamal, Nguyen, Phan, Rahman, Razak, Ridwan, Romeny, Sulaeman, Tan, Thongkhan, Tijjani, Tran, Van, Vu, Walsh, Yodsak]

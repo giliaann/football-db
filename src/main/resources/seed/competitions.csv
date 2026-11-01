@@ -1,0 +1,14 @@
+# key;name;format;level;region;kind;bench;substitution_limit;yellow_limit;advancement_rules
+laliga;LaLiga;league;club;Spain;LEAGUE;9;5;5;Double round-robin. Three points for a win, one for a draw. Ties are broken by goal difference, then goals scored. The first-placed club is champion; the bottom three are relegated to Segunda División.
+seriea;Serie A;league;club;Italy;LEAGUE;12;5;5;Double round-robin. Three points for a win, one for a draw. Ties are broken by goal difference, then goals scored. The first-placed club is champion; the bottom three are relegated to Serie B.
+ekstraklasa;Ekstraklasa;league;club;Poland;LEAGUE;9;5;4;Double round-robin. Three points for a win, one for a draw. Ties are broken by goal difference, then goals scored. The first-placed club is champion; the bottom three are relegated to I liga.
+copa;Copa del Rey;cup;club;Spain;CUP;9;6;3;Single-elimination from the round of 32. Lower-division clubs host. Ties go to extra time and penalties. Semi-finals are played over two legs. The final is at a neutral venue. A sixth substitution is allowed in extra time.
+coppa;Coppa Italia;cup;club;Italy;CUP;12;6;3;Single-elimination from the round of 32. Ties go to extra time and penalties. Semi-finals are played over two legs. The final is played at Stadio Olimpico. A sixth substitution is allowed in extra time.
+puchar;Puchar Polski;cup;club;Poland;CUP;9;6;3;Single-elimination from the round of 32 in one-off matches. Ties go to extra time and penalties. The final is played at PGE Narodowy. A sixth substitution is allowed in extra time.
+ucl;UEFA Champions League;mixed;club;Europe;UEFA;12;6;3;
+uel;UEFA Europa League;mixed;club;Europe;UEFA;12;6;3;
+wc;FIFA World Cup;mixed;national;World;TOURNAMENT;15;6;2;
+euro;UEFA European Championship;mixed;national;Europe;TOURNAMENT;15;6;2;
+copaam;Copa América;mixed;national;South America;TOURNAMENT;15;5;2;
+afcon;Africa Cup of Nations;mixed;national;Africa;TOURNAMENT;12;6;2;
+asia;AFC Asian Cup;mixed;national;Asia;TOURNAMENT;12;6;2;

@@ -223,15 +223,15 @@ public final class TestDataSeeder {
 
     private EventTypes seedEventTypes() {
         return new EventTypes(
-                save(new EventType("goal", "goal", (short) 1)),
-                save(new EventType("penalty_goal", "goal", (short) 1)),
-                save(new EventType("own_goal", "goal", (short) -1)),
-                save(new EventType("assist", "assist", (short) 0)),
-                save(new EventType("yellow_card", "card", (short) 0)),
-                save(new EventType("red_card", "card", (short) 0)),
-                save(new EventType("substitution_on", "substitution", (short) 0)),
-                save(new EventType("substitution_off", "substitution", (short) 0)),
-                save(new EventType("foul", "other", (short) 0)));
+                save(new EventType("goal", "goal")),
+                save(new EventType("penalty_goal", "goal")),
+                save(new EventType("own_goal", "goal")),
+                save(new EventType("assist", "assist")),
+                save(new EventType("yellow_card", "card")),
+                save(new EventType("red_card", "card")),
+                save(new EventType("substitution_on", "substitution")),
+                save(new EventType("substitution_off", "substitution")),
+                save(new EventType("foul", "other")));
     }
 
     // ---------------------------------------------------------------- people, clubs, venues

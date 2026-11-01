@@ -50,6 +50,16 @@ The connection settings come from `.env` or environment variables, with environm
 
 The seeder only runs on an empty database and otherwise exits without changing anything. To seed again, reset the database with `docker compose down -v`.
 
+## Random data
+
+The random seeder builds a realistic football history from 2023 to 1 November 2026: real competitions, clubs and stadiums, with fictional people. The same seed always gives the same data. `opis_seedera.md` describes its classes and rules.
+
+Fill an empty database (the seed is optional and defaults to 42):
+
+```bash
+./mvnw compile exec:java -Dexec.args="random 42"
+```
+
 ## Access
 
 These are the default addresses. If you set `DB_PORT` or `ADMINER_PORT`, use those ports instead.

@@ -22,16 +22,12 @@ public class EventType extends AuditedEntity {
     @Column(name = "category", nullable = false, length = 20)
     private String category;
 
-    @Column(name = "score_impact", nullable = false)
-    private Short scoreImpact;
-
     protected EventType() {
     }
 
-    public EventType(String name, String category, Short scoreImpact) {
+    public EventType(String name, String category) {
         this.name = name;
         this.category = category;
-        this.scoreImpact = scoreImpact;
     }
 
     public Integer getId() {
@@ -52,13 +48,5 @@ public class EventType extends AuditedEntity {
 
     public void setCategory(String category) {
         this.category = category;
-    }
-
-    public Short getScoreImpact() {
-        return scoreImpact;
-    }
-
-    public void setScoreImpact(Short scoreImpact) {
-        this.scoreImpact = scoreImpact;
     }
 }

@@ -1,0 +1,5 @@
+xgr:
+  faker:
+    name:
+      male_first_name: [Anastasios, Andreas, Apostolos, Christos, Dimitrios, Evangelos, Fotis, Georgios, Ioannis, Konstantinos, Kostas, Lazaros, Leonidas, Michail, Nikolaos, Odysseas, Panagiotis, Petros, Sokratis, Sotiris, Stavros, Thanasis, Theodoros, Vasilis]
+      last_name: [Bakasetas, Giakoumakis, Hatzidiakos, Karetsas, Konstantelias, Kourbelis, Koulierakis, Lamprou, Mantalos, Masouras, Mavropanos, Nikolaidis, Pavlidis, Papadopoulos, Papastathopoulos, Pelkas, Retsos, Siopis, Tsimikas, Tzavellas, Tzolis, Vlachodimos, Zafeiris]

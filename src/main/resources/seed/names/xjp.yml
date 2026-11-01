@@ -1,0 +1,5 @@
+xjp:
+  faker:
+    name:
+      male_first_name: [Akira, Ao, Daichi, Daiki, Daizen, Hidemasa, Hiroki, Hiroshi, Junya, Kaishu, Kaoru, Kazuki, Keito, Ken, Koki, Kota, Mao, Maya, Ritsu, Ryo, Ryota, Sho, Shogo, Shuto, Takefusa, Takehiro, Takuma, Takumi, Wataru, Yuki, Yuta, Yuto, Zion]
+      last_name: [Asano, Doan, Endo, Furuhashi, Hatate, Hayakawa, Ito, Itakura, Kamada, Kobayashi, Koga, Kubo, Machida, Maeda, Mitoma, Minamino, Morita, Nakamura, Nakata, Sato, Sugawara, Suzuki, Takahashi, Tanaka, Tanigawa, Tomiyasu, Ueda, Watanabe, Yamada, Yamamoto, Yoshida]

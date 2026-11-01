@@ -1,0 +1,4 @@
+xhr:
+  faker:
+    name:
+      male_first_name: [Ante, Antonio, Borna, Bruno, Damir, Danijel, Dario, Domagoj, Dominik, Filip, Goran, Hrvoje, Igor, Ivan, Ivica, Josip, Jurica, Karlo, Kristijan, Luka, Lovro, Marko, Martin, Mateo, Matej, Mario, Mihael, Milan, Mislav, Nikola, Petar, Stipe, Tomislav, Vedran, Vladimir, Zoran, Dušan, Miloš, Stefan, Aleksandar, Nemanja, Sergej]

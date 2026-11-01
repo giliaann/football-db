@@ -1,0 +1,4 @@
+xnl:
+  faker:
+    name:
+      male_first_name: [Arjen, Bart, Bas, Daan, Daley, Davy, Denzel, Dirk, Dries, Frenkie, Hans, Jan, Jasper, Jeroen, Jesse, Joey, Jordy, Jorrit, Jurriën, Kevin, Koen, Lars, Luuk, Marten, Mats, Matthijs, Maarten, Niels, Nick, Pieter, Quinten, Rick, Robin, Ruben, Sander, Sem, Stefan, Teun, Thijs, Tim, Tom, Virgil, Wout]

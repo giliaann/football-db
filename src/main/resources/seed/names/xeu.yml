@@ -1,0 +1,5 @@
+xeu:
+  faker:
+    name:
+      male_first_name: [Anatoliy, Andriy, Artem, Bohdan, Danylo, Denys, Dmytro, Georgiy, Heorhiy, Illia, Ivan, Mykola, Mykhailo, Oleh, Oleksandr, Oleksiy, Pavlo, Roman, Ruslan, Serhiy, Taras, Valeriy, Vasyl, Viktor, Vitaliy, Vladyslav, Volodymyr, Yaroslav, Yevhen, Yuriy]
+      last_name: [Bondarenko, Boyko, Dovbyk, Hutsulyak, Kovalenko, Kovalchuk, Kravchenko, Lunin, Malinovskyi, Matviyenko, Melnyk, Mudryk, Pavlenko, Petrenko, Polishchuk, Ponomarenko, Shevchenko, Shaparenko, Sydorchuk, Sudakov, Tkachenko, Trubin, Tsygankov, Yarmolenko, Yaremchuk, Zabarnyi, Zinchenko, Zubkov]

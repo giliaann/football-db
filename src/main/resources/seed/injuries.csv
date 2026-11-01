@@ -1,0 +1,28 @@
+# description;min_days;max_days;weight
+Hamstring strain;10;35;18
+Severe hamstring tear;35;90;4
+Calf strain;10;30;10
+Thigh muscle strain;10;30;9
+Adductor strain;7;28;8
+Groin injury;10;40;6
+Ankle sprain;7;30;10
+Ankle ligament tear;30;80;3
+Knee sprain;14;45;5
+Medial collateral ligament injury;30;75;3
+Anterior cruciate ligament tear;190;300;2
+Meniscus tear;50;130;3
+Fractured metatarsal;45;100;2
+Achilles tendon inflammation;14;50;3
+Achilles tendon rupture;180;280;1
+Plantar fasciitis;20;60;2
+Lower back pain;5;21;4
+Hip flexor strain;7;30;3
+Dislocated shoulder;25;70;2
+Fractured collarbone;40;80;1
+Broken rib;20;45;1
+Concussion;7;16;3
+Facial fracture;21;45;1
+Broken wrist;25;50;1
+Foot contusion;3;14;6
+Knee contusion;3;14;6
+Muscle fatigue;3;10;7

@@ -1,0 +1,5 @@
+xir:
+  faker:
+    name:
+      male_first_name: [Abolfazl, Ali, Alireza, Ehsan, Hossein, Karim, Majid, Mahdi, Mehdi, Milad, Mohammad, Morteza, Omid, Payam, Ramin, Reza, Roozbeh, Saeed, Saman, Sardar, Shoja]
+      last_name: [Ansarifard, Azmoun, Beiranvand, Cheshmi, Ezatolahi, Ghoddos, Gholizadeh, Hajsafi, Hosseini, Jahanbakhsh, Kanaani, Karimi, Khalilzadeh, Mohammadi, Moharrami, Niazmand, Nourafkan, Pouraliganji, Rezaeian, Taremi, Torabi]

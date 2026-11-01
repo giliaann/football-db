@@ -1,0 +1,5 @@
+xea:
+  faker:
+    name:
+      male_first_name: [Abel, Ademola, Ahmed, Alex, Augustine, Benson, Calvin, Chidozie, Daniel, Emeka, Emmanuel, Fisayo, Frank, Godfrey, Inaki, Jordan, Joseph, Kelechi, Kenneth, Kofi, Kwame, Mohammed, Moses, Musa, Nnamdi, Ola, Peter, Samuel, Sipho, Stanley, Taiwo, Themba, Thabo, Victor, Wilfred, William]
+      last_name: [Adu, Afena-Gyan, Aina, Akpom, Amartey, Ampadu, Anyanwu, Ayew, Baloyi, Banda, Boateng, Chukwueze, Dennis, Ekong, Iheanacho, Iwobi, Kudus, Lookman, Mabaso, Mokoena, Moyo, Musonda, Mwale, Ndidi, Nkosi, Ochieng, Okocha, Onyeka, Osimhen, Partey, Phiri, Salisu, Sibanda, Simon, Tau, Williams, Yirenkyi, Zulu]

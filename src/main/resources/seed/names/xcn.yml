@@ -1,0 +1,5 @@
+xcn:
+  faker:
+    name:
+      male_first_name: [Binbin, Chengdong, Dalei, Haiyang, Hao, Junling, Lei, Linpeng, Long, Ming, Rui, Shangyuan, Shenglong, Tao, Wei, Xizhe, Xu, Yang, Yuning, Zhe, Zhen, Zhi]
+      last_name: [Cai, Chen, Dai, Fei, Gao, Han, He, Huang, Jiang, Li, Lin, Liu, Tang, Wang, Wei, Wu, Xie, Xu, Yan, Yang, Zhang, Zhao, Zhou, Zhu]

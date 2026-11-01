@@ -1,0 +1,4 @@
+xit:
+  faker:
+    name:
+      male_first_name: [Alessandro, Alessio, Andrea, Antonio, Christian, Ciro, Claudio, Daniele, Davide, Domenico, Edoardo, Emanuele, Fabio, Federico, Filippo, Francesco, Gabriele, Giacomo, Gianluca, Giorgio, Giovanni, Giuseppe, Lorenzo, Luca, Marco, Mario, Matteo, Mattia, Michele, Nicola, Nicolò, Pietro, Riccardo, Roberto, Salvatore, Simone, Stefano, Tommaso, Vincenzo]

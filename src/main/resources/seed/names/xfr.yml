@@ -1,0 +1,4 @@
+xfr:
+  faker:
+    name:
+      male_first_name: [Adrien, Alexandre, Antoine, Arthur, Aurélien, Baptiste, Benjamin, Clément, Corentin, Damien, Dimitri, Enzo, Étienne, Florian, Gabriel, Guillaume, Hugo, Jérémy, Jordan, Julien, Kevin, Louis, Lucas, Mathieu, Matteo, Maxime, Nathan, Nicolas, Olivier, Paul, Pierre, Quentin, Raphaël, Romain, Sébastien, Théo, Thomas, Tristan, Valentin, Yann]

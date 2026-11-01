@@ -1,0 +1,5 @@
+xil:
+  faker:
+    name:
+      male_first_name: [Amit, Avi, Dor, Eli, Eran, Gabi, Idan, Itay, Liel, Manor, Moshe, Nir, Omer, Oscar, Ram, Roy, Shon, Sagiv, Tai, Yonatan, Yossi]
+      last_name: [Abu Fani, Baribo, Bitton, Dasa, Elhamed, Gloukh, Haziza, Kanichowsky, Kinda, Lavi, Levi, Peretz, Revivo, Sabia, Solomon, Weissman, Yehezkel, Zahavi]

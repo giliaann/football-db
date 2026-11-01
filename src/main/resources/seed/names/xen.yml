@@ -1,0 +1,4 @@
+xen:
+  faker:
+    name:
+      male_first_name: [Aaron, Adam, Alex, Alexander, Andrew, Anthony, Ben, Benjamin, Brandon, Callum, Cameron, Charlie, Christian, Christopher, Connor, Daniel, David, Dean, Declan, Dominic, Dylan, Ethan, Eric, Gary, George, Harry, Harvey, Henry, Isaac, Jack, Jacob, James, Jamie, Jason, Jayden, Jordan, Joseph, Joshua, Kieran, Kyle, Leon, Lewis, Liam, Lucas, Luke, Marcus, Mark, Mason, Matthew, Michael, Nathan, Neil, Nicholas, Noah, Oliver, Owen, Patrick, Paul, Peter, Reece, Rhys, Richard, Robert, Ryan, Samuel, Scott, Sean, Stephen, Steven, Thomas, Timothy, Tyler, William]

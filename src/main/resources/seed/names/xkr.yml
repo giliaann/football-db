@@ -1,0 +1,5 @@
+xkr:
+  faker:
+    name:
+      male_first_name: [Beom-keun, Dong-gyeong, Gue-sung, Hee-chan, Heung-min, Hyeon-gyu, Hyun-woo, In-beom, Jae-sung, Jin-su, Jun-ho, Kang-in, Kyung-won, Min-jae, Sang-ho, Seung-gyu, Seung-ho, Tae-hwan, Tae-seok, Woo-young, Yong-woo, Young-woo]
+      last_name: [Bae, Cho, Choi, Han, Hong, Hwang, Jang, Jeong, Jung, Kang, Kim, Kwon, Lee, Lim, Moon, Na, Oh, Paik, Park, Seol, Shin, Son, Song, Yang, Yoon]

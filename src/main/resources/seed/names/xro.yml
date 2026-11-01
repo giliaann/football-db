@@ -1,0 +1,5 @@
+xro:
+  faker:
+    name:
+      male_first_name: [Adrian, Alexandru, Andrei, Bogdan, Ciprian, Claudiu, Constantin, Cosmin, Cristian, Dan, Daniel, Darius, Denis, Dennis, Dragoș, Eduard, Florin, Gabriel, George, Ianis, Ion, Ionuț, Lucian, Marius, Mihai, Nicolae, Octavian, Radu, Răzvan, Robert, Sergiu, Ștefan, Tudor, Valentin, Vasile, Vlad]
+      last_name: [Alexe, Anghel, Bălan, Barbu, Bîrligea, Ciobanu, Coman, Constantin, Cristea, Diaconu, Dobre, Drăgușin, Dumitru, Florescu, Georgescu, Hagi, Ionescu, Lazăr, Man, Marin, Matei, Mihăilă, Moldovan, Munteanu, Niță, Oprea, Petrescu, Popa, Popescu, Puşcaş, Radu, Rațiu, Răducioiu, Rus, Stan, Stanciu, Tănase, Toma, Ursu, Vasile]

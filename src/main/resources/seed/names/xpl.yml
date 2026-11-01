@@ -1,0 +1,4 @@
+xpl:
+  faker:
+    name:
+      male_first_name: [Adam, Adrian, Aleksander, Antoni, Arkadiusz, Artur, Bartosz, Bartłomiej, Damian, Daniel, Dawid, Dominik, Filip, Franciszek, Grzegorz, Hubert, Igor, Jakub, Jan, Jarosław, Jędrzej, Kacper, Kamil, Karol, Konrad, Krystian, Krzysztof, Łukasz, Maciej, Marcin, Marek, Mariusz, Mateusz, Michał, Mikołaj, Nikodem, Norbert, Oskar, Patryk, Paweł, Piotr, Przemysław, Radosław, Rafał, Robert, Sebastian, Szymon, Tomasz, Wiktor, Wojciech]

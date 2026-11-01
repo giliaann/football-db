@@ -1,0 +1,5 @@
+xar:
+  faker:
+    name:
+      male_first_name: [Abdallah, Abdelkader, Achraf, Adel, Ahmed, Ali, Amine, Amr, Anas, Ayoub, Aymen, Bilal, Hamza, Hassan, Hatem, Hussein, Ibrahim, Ismail, Karim, Khaled, Mahmoud, Marwan, Mehdi, Mohamed, Mohammed, Mostafa, Mustafa, Nabil, Nasser, Omar, Rami, Riyad, Saad, Saleh, Salem, Sami, Tarek, Yacine, Yassine, Youssef, Ziad]
+      last_name: [Abdelhamid, Aboubakar, Al-Bulaihi, Al-Dawsari, Al-Faraj, Al-Ghanam, Al-Haydos, Al-Rawi, Al-Shehri, Amrabat, Attal, Belaili, Bennacer, Ben Romdhane, Bounedjah, Bounou, El Kaabi, El Khannouss, El Shenawy, Hafez, Hakimi, Hamdi, Hassan, Ibrahim, Khazri, Mahrez, Mansour, Mazraoui, Mokhtar, Mostafa, Nasri, Rahimi, Saber, Saiss, Salah, Sliti, Trezeguet, Yamiq, Zaki, Ziyech]

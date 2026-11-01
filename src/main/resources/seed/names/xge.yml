@@ -1,0 +1,5 @@
+xge:
+  faker:
+    name:
+      male_first_name: [Davit, Giorgi, Guram, Irakli, Jaba, Jemal, Khvicha, Levan, Luka, Nika, Otar, Saba, Solomon, Tornike, Vato, Vladimer, Zuriko]
+      last_name: [Beridze, Chakvetadze, Dvali, Gelashvili, Gocholeishvili, Gvelesiani, Kakabadze, Kashia, Kiteishvili, Kochorashvili, Kvaratskhelia, Kvekveskiri, Lobzhanidze, Lochoshvili, Mamardashvili, Mikautadze, Shengelia, Tsitaishvili, Zivzivadze]

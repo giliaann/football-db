@@ -1,0 +1,5 @@
+xin:
+  faker:
+    name:
+      male_first_name: [Akash, Amarjit, Amrinder, Anirudh, Anwar, Ashique, Brandon, Gurpreet, Jeakson, Lalengmawia, Lallianzuala, Liston, Mahesh, Manvir, Naorem, Rahul, Sahal, Sandesh, Sunil, Subhasish, Udanta, Vikram]
+      last_name: [Bheke, Bose, Chhangte, Chhetri, Colaco, Fernandes, Gurung, Jhingan, Kaith, Kumar, Kuruniyan, Mishra, Naik, Patel, Rai, Reddy, Sandhu, Sharma, Singh, Thapa]

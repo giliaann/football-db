@@ -1,0 +1,164 @@
+# name;short;founded;country;city;stadium;capacity;division;tier
+# division = where the club plays at the start of 2023/24; tier: 1 elite, 2 established, 3 small club.
+Real Madrid CF;RMA;1902;Spain;Madrid;Estadio Santiago Bernabéu;83186;laliga;1
+FC Barcelona;BAR;1899;Spain;Barcelona;Estadi Olímpic Lluís Companys;54367;laliga;1
+Club Atlético de Madrid;ATM;1903;Spain;Madrid;Riyadh Air Metropolitano;70460;laliga;1
+Girona FC;GIR;1930;Spain;Girona;Estadi Montilivi;14624;laliga;2
+Athletic Club;ATH;1898;Spain;Bilbao;San Mamés;53289;laliga;2
+Real Sociedad;RSO;1909;Spain;San Sebastián;Reale Arena;39313;laliga;2
+Real Betis Balompié;BET;1907;Spain;Seville;Estadio Benito Villamarín;60721;laliga;2
+Villarreal CF;VIL;1923;Spain;Villarreal;Estadio de la Cerámica;23500;laliga;2
+Valencia CF;VAL;1919;Spain;Valencia;Estadio de Mestalla;49430;laliga;2
+Sevilla FC;SEV;1890;Spain;Seville;Estadio Ramón Sánchez-Pizjuán;43883;laliga;2
+Deportivo Alavés;ALA;1921;Spain;Vitoria-Gasteiz;Estadio de Mendizorroza;19840;laliga;3
+CA Osasuna;OSA;1920;Spain;Pamplona;Estadio El Sadar;23516;laliga;3
+Getafe CF;GET;1983;Spain;Getafe;Coliseum;16500;laliga;3
+RC Celta de Vigo;CEL;1923;Spain;Vigo;Abanca-Balaídos;24870;laliga;3
+RCD Mallorca;MLL;1916;Spain;Palma;Estadi Mallorca Son Moix;23142;laliga;3
+UD Las Palmas;LPA;1949;Spain;Las Palmas;Estadio de Gran Canaria;32400;laliga;3
+Rayo Vallecano;RAY;1924;Spain;Madrid;Estadio de Vallecas;14708;laliga;3
+Cádiz CF;CAD;1910;Spain;Cádiz;Estadio Nuevo Mirandilla;20724;laliga;3
+UD Almería;ALM;1989;Spain;Almería;Power Horse Stadium;18331;laliga;3
+Granada CF;GRA;1931;Spain;Granada;Nuevo Estadio de Los Cármenes;19336;laliga;3
+CD Leganés;LGN;1928;Spain;Leganés;Estadio Municipal de Butarque;12454;segunda;3
+RCD Espanyol;ESP;1900;Spain;Cornellà de Llobregat;RCDE Stadium;40000;segunda;3
+Real Valladolid CF;VLL;1928;Spain;Valladolid;Estadio José Zorrilla;27618;segunda;3
+SD Eibar;EIB;1940;Spain;Eibar;Estadio Municipal de Ipurua;8164;segunda;3
+Real Sporting de Gijón;SPO;1905;Spain;Gijón;Estadio El Molinón;29371;segunda;3
+Real Oviedo;OVI;1926;Spain;Oviedo;Estadio Carlos Tartiere;30500;segunda;3
+Real Racing Club de Santander;RAC;1913;Spain;Santander;Campos de Sport de El Sardinero;22222;segunda;3
+Elche CF;ELC;1923;Spain;Elche;Estadio Manuel Martínez Valero;31388;segunda;3
+Levante UD;LEV;1909;Spain;Valencia;Estadi Ciutat de València;26354;segunda;3
+Real Zaragoza;ZAR;1932;Spain;Zaragoza;Estadio de La Romareda;33608;segunda;3
+Burgos CF;BUR;1985;Spain;Burgos;Estadio Municipal de El Plantío;12194;segunda;3
+CD Tenerife;TEN;1912;Spain;Santa Cruz de Tenerife;Estadio Heliodoro Rodríguez López;22824;segunda;3
+SD Huesca;HUE;1960;Spain;Huesca;Estadio El Alcoraz;9128;segunda;3
+Inter Milan;INT;1908;Italy;Milan;Stadio Giuseppe Meazza;75817;seriea;1
+AC Milan;MIL;1899;Italy;Milan;Stadio Giuseppe Meazza;75817;seriea;1
+Juventus FC;JUV;1897;Italy;Turin;Allianz Stadium;41507;seriea;1
+Atalanta BC;ATA;1907;Italy;Bergamo;Gewiss Stadium;24950;seriea;2
+Bologna FC 1909;BOL;1909;Italy;Bologna;Stadio Renato Dall'Ara;36462;seriea;2
+AS Roma;ROM;1927;Italy;Rome;Stadio Olimpico;70634;seriea;2
+SS Lazio;LAZ;1900;Italy;Rome;Stadio Olimpico;70634;seriea;2
+ACF Fiorentina;FIO;1926;Italy;Florence;Stadio Artemio Franchi;43147;seriea;2
+Torino FC;TOR;1906;Italy;Turin;Stadio Olimpico Grande Torino;27958;seriea;2
+SSC Napoli;NAP;1926;Italy;Naples;Stadio Diego Armando Maradona;54726;seriea;1
+Genoa CFC;GEN;1893;Italy;Genoa;Stadio Luigi Ferraris;33205;seriea;3
+AC Monza;MON;1912;Italy;Monza;U-Power Stadium;16917;seriea;3
+Hellas Verona FC;HEL;1903;Italy;Verona;Stadio Marcantonio Bentegodi;39371;seriea;3
+US Lecce;LEC;1908;Italy;Lecce;Stadio Via del Mare;31533;seriea;3
+Udinese Calcio;UDI;1896;Italy;Udine;Bluenergy Stadium;25144;seriea;3
+Cagliari Calcio;CAG;1920;Italy;Cagliari;Unipol Domus;16416;seriea;3
+Empoli FC;EMP;1920;Italy;Empoli;Stadio Carlo Castellani;16284;seriea;3
+Frosinone Calcio;FRO;1928;Italy;Frosinone;Stadio Benito Stirpe;16227;seriea;3
+US Sassuolo Calcio;SAS;1920;Italy;Reggio Emilia;Mapei Stadium;21584;seriea;3
+US Salernitana 1919;SAL;1919;Italy;Salerno;Stadio Arechi;37180;seriea;3
+Parma Calcio 1913;PAR;1913;Italy;Parma;Stadio Ennio Tardini;22352;serieb;3
+Como 1907;COM;1907;Italy;Como;Stadio Giuseppe Sinigaglia;13602;serieb;3
+Venezia FC;VEN;1907;Italy;Venice;Stadio Pierluigi Penzo;11150;serieb;3
+US Cremonese;CRE;1903;Italy;Cremona;Stadio Giovanni Zini;16003;serieb;3
+Palermo FC;PAL;1900;Italy;Palermo;Stadio Renzo Barbera;36349;serieb;3
+UC Sampdoria;SAM;1946;Italy;Genoa;Stadio Luigi Ferraris;33205;serieb;3
+SSC Bari;BRI;1908;Italy;Bari;Stadio San Nicola;58270;serieb;3
+Pisa SC;PIS;1909;Italy;Pisa;Arena Garibaldi;14000;serieb;3
+Brescia Calcio;BRE;1911;Italy;Brescia;Stadio Mario Rigamonti;19550;serieb;3
+Modena FC;MOD;1912;Italy;Modena;Stadio Alberto Braglia;21151;serieb;3
+US Catanzaro 1929;CTZ;1929;Italy;Catanzaro;Stadio Nicola Ceravolo;14650;serieb;3
+Spezia Calcio;SPE;1906;Italy;La Spezia;Stadio Alberto Picco;10336;serieb;3
+Cosenza Calcio;COS;1914;Italy;Cosenza;Stadio San Vito-Gigi Marulla;20987;serieb;3
+Jagiellonia Białystok;JAG;1920;Poland;Białystok;Stadion Miejski w Białymstoku;22372;ekstraklasa;2
+Śląsk Wrocław;SLA;1947;Poland;Wrocław;Tarczyński Arena Wrocław;42771;ekstraklasa;2
+Legia Warszawa;LEG;1916;Poland;Warsaw;Stadion Wojska Polskiego;31103;ekstraklasa;2
+Pogoń Szczecin;POG;1948;Poland;Szczecin;Stadion im. Floriana Krygiera;21163;ekstraklasa;2
+Lech Poznań;LPO;1922;Poland;Poznań;Stadion Miejski w Poznaniu;42837;ekstraklasa;2
+Górnik Zabrze;GOR;1948;Poland;Zabrze;Arena Zabrze;24563;ekstraklasa;3
+Raków Częstochowa;RAK;1921;Poland;Częstochowa;Miejski Stadion Piłkarski Raków;5500;ekstraklasa;2
+Zagłębie Lubin;ZAG;1945;Poland;Lubin;Stadion Zagłębia Lubin;16300;ekstraklasa;3
+Widzew Łódź;WID;1910;Poland;Łódź;Stadion Widzewa;18018;ekstraklasa;3
+Piast Gliwice;PIA;1945;Poland;Gliwice;Stadion Miejski w Gliwicach;10037;ekstraklasa;3
+Stal Mielec;STM;1939;Poland;Mielec;Stadion Miejski w Mielcu;6864;ekstraklasa;3
+Cracovia;CRA;1906;Poland;Kraków;Stadion im. Józefa Piłsudskiego;15016;ekstraklasa;3
+Korona Kielce;KOR;1973;Poland;Kielce;Exbud Arena;15550;ekstraklasa;3
+Radomiak Radom;RAD;1910;Poland;Radom;Stadion im. Braci Czachorów;8840;ekstraklasa;3
+Puszcza Niepołomice;PUS;1923;Poland;Niepołomice;Stadion Miejski w Niepołomicach;2118;ekstraklasa;3
+Warta Poznań;WAR;1912;Poland;Poznań;Dyskobolia;5383;ekstraklasa;3
+Ruch Chorzów;RUC;1920;Poland;Chorzów;Stadion Ruchu Chorzów;9300;ekstraklasa;3
+ŁKS Łódź;LKS;1908;Poland;Łódź;Stadion im. Władysława Króla;18029;ekstraklasa;3
+Lechia Gdańsk;LGD;1945;Poland;Gdańsk;Polsat Plus Arena Gdańsk;41620;iliga;3
+Arka Gdynia;ARK;1929;Poland;Gdynia;Stadion Miejski w Gdyni;15139;iliga;3
+Wisła Kraków;WIS;1906;Poland;Kraków;Stadion im. Henryka Reymana;33130;iliga;3
+GKS Katowice;GKS;1964;Poland;Katowice;Stadion GKS Katowice;15048;iliga;3
+Bruk-Bet Termalica Nieciecza;TER;1922;Poland;Nieciecza;Stadion Bruk-Bet Termalica;4666;iliga;3
+Motor Lublin;MOT;1950;Poland;Lublin;Arena Lublin;15500;iliga;3
+Miedź Legnica;MIE;1971;Poland;Legnica;Stadion im. Orła Białego;6864;iliga;3
+Wisła Płock;WPL;1947;Poland;Płock;Orlen Arena Płock;15004;iliga;3
+Górnik Łęczna;GLE;1979;Poland;Łęczna;Stadion Górnika Łęczna;7464;iliga;3
+Odra Opole;ODR;1945;Poland;Opole;Stadion Odry Opole;4560;iliga;3
+Polonia Warszawa;PWA;1911;Poland;Warsaw;Stadion im. Kazimierza Sosnkowskiego;7150;iliga;3
+Stal Rzeszów;STR;1944;Poland;Rzeszów;Stadion Stali Rzeszów;11547;iliga;3
+Znicz Pruszków;ZNI;1923;Poland;Pruszków;Stadion Znicza Pruszków;1977;iliga;3
+GKS Tychy;TYC;1971;Poland;Tychy;Stadion Miejski w Tychach;15150;iliga;3
+Manchester City FC;MCI;1880;England;Manchester;Etihad Stadium;53400;europe;1
+Arsenal FC;ARS;1886;England;London;Emirates Stadium;60704;europe;1
+Liverpool FC;LIV;1892;England;Liverpool;Anfield;61276;europe;1
+Manchester United FC;MUN;1878;England;Manchester;Old Trafford;74197;europe;1
+Chelsea FC;CHE;1905;England;London;Stamford Bridge;40173;europe;1
+Tottenham Hotspur FC;TOT;1882;England;London;Tottenham Hotspur Stadium;62850;europe;1
+Newcastle United FC;NEW;1892;England;Newcastle upon Tyne;St James' Park;52305;europe;2
+Aston Villa FC;AVL;1874;England;Birmingham;Villa Park;42682;europe;2
+FC Bayern München;BAY;1900;Germany;Munich;Allianz Arena;75024;europe;1
+Borussia Dortmund;BVB;1909;Germany;Dortmund;Signal Iduna Park;81365;europe;1
+Bayer 04 Leverkusen;B04;1904;Germany;Leverkusen;BayArena;30210;europe;1
+RB Leipzig;RBL;2009;Germany;Leipzig;Red Bull Arena;47069;europe;2
+Eintracht Frankfurt;SGE;1899;Germany;Frankfurt;Deutsche Bank Park;58000;europe;2
+VfB Stuttgart;VFB;1893;Germany;Stuttgart;MHPArena;60449;europe;2
+Paris Saint-Germain FC;PSG;1970;France;Paris;Parc des Princes;47929;europe;1
+AS Monaco FC;ASM;1924;France;Monaco;Stade Louis II;18523;europe;2
+Olympique de Marseille;OM;1899;France;Marseille;Orange Vélodrome;67394;europe;2
+LOSC Lille;LIL;1944;France;Villeneuve-d'Ascq;Decathlon Arena Pierre-Mauroy;50186;europe;2
+Olympique Lyonnais;OL;1950;France;Décines-Charpieu;Groupama Stadium;59186;europe;2
+RC Lens;RCL;1906;France;Lens;Stade Bollaert-Delelis;37705;europe;2
+SL Benfica;SLB;1904;Portugal;Lisbon;Estádio da Luz;64642;europe;2
+FC Porto;FCP;1893;Portugal;Porto;Estádio do Dragão;50033;europe;2
+Sporting CP;SCP;1906;Portugal;Lisbon;Estádio José Alvalade;50095;europe;2
+SC Braga;SCB;1921;Portugal;Braga;Estádio Municipal de Braga;30286;europe;2
+AFC Ajax;AJA;1900;Netherlands;Amsterdam;Johan Cruijff ArenA;55865;europe;2
+PSV Eindhoven;PSV;1913;Netherlands;Eindhoven;Philips Stadion;35000;europe;2
+Feyenoord;FEY;1908;Netherlands;Rotterdam;De Kuip;47500;europe;2
+AZ Alkmaar;AZ;1967;Netherlands;Alkmaar;AFAS Stadion;19478;europe;3
+Club Brugge KV;CLU;1891;Belgium;Bruges;Jan Breydel Stadium;29062;europe;2
+RSC Anderlecht;AND;1908;Belgium;Brussels;Lotto Park;21500;europe;2
+Royale Union Saint-Gilloise;USG;1897;Belgium;Brussels;Stade Joseph Marien;8000;europe;3
+Galatasaray SK;GAL;1905;Turkey;Istanbul;RAMS Park;52223;europe;2
+Fenerbahçe SK;FEN;1907;Turkey;Istanbul;Şükrü Saracoğlu Stadium;47834;europe;2
+Beşiktaş JK;BJK;1903;Turkey;Istanbul;Tüpraş Stadyumu;42590;europe;2
+Trabzonspor;TS;1967;Turkey;Trabzon;Şenol Güneş Stadium;40782;europe;3
+Celtic FC;CLT;1887;Scotland;Glasgow;Celtic Park;60411;europe;2
+Rangers FC;RAN;1872;Scotland;Glasgow;Ibrox Stadium;50817;europe;2
+FC Red Bull Salzburg;RBS;1933;Austria;Salzburg;Red Bull Arena Salzburg;17218;europe;2
+SK Sturm Graz;STU;1909;Austria;Graz;Merkur Arena;16364;europe;3
+SK Rapid Wien;RAP;1899;Austria;Vienna;Allianz Stadion;28000;europe;3
+BSC Young Boys;YB;1898;Switzerland;Bern;Stadion Wankdorf;32000;europe;3
+FC Basel 1893;BAS;1893;Switzerland;Basel;St. Jakob-Park;38512;europe;3
+SK Slavia Praha;SLP;1892;Czech Republic;Prague;Fortuna Arena;19370;europe;2
+AC Sparta Praha;SPP;1893;Czech Republic;Prague;epet ARENA;18887;europe;2
+FC Viktoria Plzeň;PLZ;1911;Czech Republic;Plzeň;Doosan Arena;11700;europe;3
+GNK Dinamo Zagreb;DZG;1945;Croatia;Zagreb;Stadion Maksimir;24851;europe;2
+HNK Hajduk Split;HAJ;1911;Croatia;Split;Stadion Poljud;33987;europe;3
+Red Star Belgrade;CZV;1945;Serbia;Belgrade;Rajko Mitić Stadium;51755;europe;2
+FK Partizan;PRT;1945;Serbia;Belgrade;Partizan Stadium;29775;europe;3
+FC Shakhtar Donetsk;SHA;1936;Ukraine;Donetsk;Donbas Arena;52518;europe;2
+FC Dynamo Kyiv;DYN;1927;Ukraine;Kyiv;Valeriy Lobanovskyi Dynamo Stadium;16873;europe;3
+Olympiacos FC;OLY;1925;Greece;Piraeus;Karaiskakis Stadium;32115;europe;2
+PAOK FC;PAO;1926;Greece;Thessaloniki;Toumba Stadium;28703;europe;3
+Panathinaikos FC;PAN;1908;Greece;Athens;Apostolos Nikolaidis Stadium;16003;europe;3
+AEK Athens FC;AEK;1924;Greece;Athens;Agia Sophia Stadium;32500;europe;3
+Ferencvárosi TC;FTC;1899;Hungary;Budapest;Groupama Aréna;22043;europe;3
+FC København;FCK;1992;Denmark;Copenhagen;Parken;38065;europe;3
+FC Midtjylland;FCM;1999;Denmark;Herning;MCH Arena;11432;europe;3
+FK Bodø/Glimt;BOD;1916;Norway;Bodø;Aspmyra Stadion;8270;europe;3
+Molde FK;MOL;1911;Norway;Molde;Aker Stadion;11249;europe;3
+Malmö FF;MFF;1910;Sweden;Malmö;Eleda Stadion;22500;europe;3
+ŠK Slovan Bratislava;SLO;1919;Slovakia;Bratislava;Tehelné pole;22500;europe;3
+FCSB;FCS;1947;Romania;Bucharest;Arena Națională;55634;europe;3
+Maccabi Tel Aviv FC;MTA;1906;Israel;Tel Aviv;Bloomfield Stadium;29400;europe;3

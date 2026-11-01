@@ -1,0 +1,70 @@
+# name;city;country;capacity;tag  (tag = tournament host pool, or FINAL for finals only)
+Allianz Arena;Munich;Germany;66026;EURO2024
+Olympiastadion Berlin;Berlin;Germany;71000;EURO2024
+Signal Iduna Park;Dortmund;Germany;62421;EURO2024
+Veltins-Arena;Gelsenkirchen;Germany;49471;EURO2024
+Volksparkstadion;Hamburg;Germany;48073;EURO2024
+Merkur Spiel-Arena;Düsseldorf;Germany;46264;EURO2024
+Deutsche Bank Park;Frankfurt;Germany;46558;EURO2024
+RheinEnergieStadion;Cologne;Germany;43284;EURO2024
+Red Bull Arena;Leipzig;Germany;40000;EURO2024
+MHPArena;Stuttgart;Germany;50998;EURO2024
+Hard Rock Stadium;Miami Gardens;United States;65326;COPA2024
+Mercedes-Benz Stadium;Atlanta;United States;71000;COPA2024
+AT&T Stadium;Arlington;United States;80000;COPA2024
+NRG Stadium;Houston;United States;72220;COPA2024
+SoFi Stadium;Inglewood;United States;70240;COPA2024
+MetLife Stadium;East Rutherford;United States;82500;COPA2024
+Allegiant Stadium;Las Vegas;United States;65000;COPA2024
+State Farm Stadium;Glendale;United States;63400;COPA2024
+Levi's Stadium;Santa Clara;United States;68500;COPA2024
+Bank of America Stadium;Charlotte;United States;74867;COPA2024
+Children's Mercy Park;Kansas City;United States;18467;COPA2024
+Inter&Co Stadium;Orlando;United States;25500;COPA2024
+Q2 Stadium;Austin;United States;20738;COPA2024
+GEHA Field at Arrowhead Stadium;Kansas City;United States;76416;COPA2024
+MetLife Stadium;East Rutherford;United States;82500;WC2026
+AT&T Stadium;Arlington;United States;80000;WC2026
+GEHA Field at Arrowhead Stadium;Kansas City;United States;76416;WC2026
+NRG Stadium;Houston;United States;72220;WC2026
+Mercedes-Benz Stadium;Atlanta;United States;71000;WC2026
+SoFi Stadium;Inglewood;United States;70240;WC2026
+Lincoln Financial Field;Philadelphia;United States;69796;WC2026
+Lumen Field;Seattle;United States;69000;WC2026
+Levi's Stadium;Santa Clara;United States;68500;WC2026
+Gillette Stadium;Foxborough;United States;65878;WC2026
+Hard Rock Stadium;Miami Gardens;United States;65326;WC2026
+Estadio Azteca;Mexico City;Mexico;83264;WC2026
+Estadio BBVA;Guadalupe;Mexico;53500;WC2026
+Estadio Akron;Zapopan;Mexico;49850;WC2026
+BMO Field;Toronto;Canada;45736;WC2026
+BC Place;Vancouver;Canada;54500;WC2026
+Alassane Ouattara Stadium;Abidjan;Ivory Coast;60012;AFCON2023
+Stade Félix Houphouët-Boigny;Abidjan;Ivory Coast;33000;AFCON2023
+Stade Charles Konan Banny;Yamoussoukro;Ivory Coast;20000;AFCON2023
+Stade de la Paix;Bouaké;Ivory Coast;40000;AFCON2023
+Stade Amadou Gon Coulibaly;Korhogo;Ivory Coast;20000;AFCON2023
+Stade Laurent Pokou;San-Pédro;Ivory Coast;20000;AFCON2023
+Prince Moulay Abdellah Stadium;Rabat;Morocco;68700;AFCON2025
+Prince Moulay El Hassan Stadium;Rabat;Morocco;22000;AFCON2025
+Rabat Olympic Annex Stadium;Rabat;Morocco;21000;AFCON2025
+Al Barid Stadium;Rabat;Morocco;18000;AFCON2025
+Stade Mohammed V;Casablanca;Morocco;45891;AFCON2025
+Grand Stade de Marrakech;Marrakesh;Morocco;41356;AFCON2025
+Grand Stade d'Agadir;Agadir;Morocco;45480;AFCON2025
+Grand Stade de Tanger;Tangier;Morocco;75600;AFCON2025
+Stade de Fès;Fez;Morocco;45000;AFCON2025
+Lusail Stadium;Lusail;Qatar;88966;ASIA2023
+Al Bayt Stadium;Al Khor;Qatar;68895;ASIA2023
+Education City Stadium;Al Rayyan;Qatar;45350;ASIA2023
+Ahmad bin Ali Stadium;Al Rayyan;Qatar;45032;ASIA2023
+Al Thumama Stadium;Doha;Qatar;44400;ASIA2023
+Khalifa International Stadium;Al Rayyan;Qatar;45857;ASIA2023
+Al Janoub Stadium;Al Wakrah;Qatar;44325;ASIA2023
+Jassim bin Hamad Stadium;Doha;Qatar;12946;ASIA2023
+Abdullah bin Khalifa Stadium;Doha;Qatar;9000;ASIA2023
+Wembley Stadium;London;England;90000;FINAL
+Puskás Aréna;Budapest;Hungary;67215;FINAL
+Aviva Stadium;Dublin;Republic of Ireland;51700;FINAL
+Estadio de La Cartuja;Seville;Spain;57619;FINAL
+PGE Narodowy;Warsaw;Poland;58580;FINAL

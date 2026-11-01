@@ -1,0 +1,5 @@
+xwa:
+  faker:
+    name:
+      male_first_name: [Aboubacar, Abdou, Alassane, Amadou, Aliou, Bamba, Boubacar, Cheikh, Christian, Daouda, Ibrahima, Idrissa, Ismaïla, Issa, Kalidou, Krépin, Lamine, Mamadou, Moussa, Nicolas, Oumar, Pape, Patrick, Sadio, Salif, Seko, Serge, Sékou, Souleymane, Wilfried, Yves, Yannick, Yoane]
+      last_name: [Aurier, Bakayoko, Ba, Bailly, Bamba, Camara, Cissé, Coulibaly, Diakhaby, Diallo, Diarra, Diatta, Dieng, Diop, Doumbia, Fofana, Gueye, Haidara, Kanté, Keïta, Koné, Koulibaly, Kouyaté, Mané, Mendy, N'Diaye, Ouattara, Pépé, Sané, Sarr, Sissoko, Sow, Touré, Traoré, Wissa, Zaha, Zakaria]

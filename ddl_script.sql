@@ -310,14 +310,12 @@ CREATE TABLE EventType
     event_type_id      integer GENERATED ALWAYS AS IDENTITY,
     name                   VARCHAR(40) NOT NULL,
     category               VARCHAR(20) NOT NULL,
-    score_impact          smallint    NOT NULL,
     created_at            TIMESTAMP   NOT NULL DEFAULT now(),
     updated_at             TIMESTAMP   NOT NULL DEFAULT now(),
     last_edited_by_id integer     NOT NULL,
     CONSTRAINT pk_event_type PRIMARY KEY (event_type_id),
     CONSTRAINT uk_event_type_name UNIQUE (name),
-    CONSTRAINT ck_event_type_category CHECK ( category IN ('goal', 'assist', 'card', 'substitution', 'other') ),
-    CONSTRAINT ck_event_type_score_impact CHECK ( score_impact IN (-1, 0, 1) )
+    CONSTRAINT ck_event_type_category CHECK ( category IN ('goal', 'assist', 'card', 'substitution', 'other') )
 
 );
 
