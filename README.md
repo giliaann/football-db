@@ -37,9 +37,22 @@ The schema is only applied to an empty database, so use `down -v` after changing
 
 ## Test data
 
-The seeder inserts a small, consistent data set into every table using Hibernate through the JPA API. It requires JDK 21 or newer; Maven is downloaded automatically by the wrapper.
+The seeder inserts a small, consistent data set into every table using Hibernate through the JPA API.
 
-Start the database, then run the seeder from the project root:
+### In Docker (recommended)
+
+Only Docker is needed. The seeder is built and run in a container with the same JDK and Maven for everyone, and it connects to the `db` service inside the Docker network:
+
+```bash
+docker compose run --rm --build seeder              # test data
+docker compose run --rm --build seeder random 42    # random data
+```
+
+`run` starts the database if it is not running and waits until the schema is loaded. `--build` rebuilds the image after code changes; Docker's cache makes this quick when nothing changed. The seeder is in the `seed` profile, so `docker compose up` does not start it.
+
+### Locally
+
+This requires JDK 21 or newer; Maven is downloaded automatically by the wrapper. Start the database, then run the seeder from the project root:
 
 ```bash
 docker compose up -d
@@ -57,6 +70,8 @@ The random seeder builds a realistic football history from 2023 to 1 November 20
 Fill an empty database (the seed is optional and defaults to 42):
 
 ```bash
+docker compose run --rm --build seeder random 42
+# or locally:
 ./mvnw compile exec:java -Dexec.args="random 42"
 ```
 
