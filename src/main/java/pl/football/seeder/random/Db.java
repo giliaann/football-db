@@ -7,9 +7,8 @@ import pl.football.seeder.entity.Editor;
 import java.time.LocalDateTime;
 
 /**
- * All writes go through here.
- *
- * <p>Inserts run as soon as an entity is saved (IDENTITY keys), so entities must be complete by then.
+ * All writes go through here. Keys are IDENTITY, so every save is an INSERT at once and an entity
+ * must be complete when it is saved.
  */
 final class Db {
 
@@ -23,17 +22,18 @@ final class Db {
         return em;
     }
 
-    <T extends AuditedEntity> T save(T entity, Editor by, LocalDateTime at) {
+    /** Sets the audit columns: who edited the row last and when it was created (and, unless set, updated). */
+    <T extends AuditedEntity> T save(T entity, Editor by, LocalDateTime createdAt) {
         entity.setLastEditedBy(by);
-        entity.setCreatedAt(at);
+        entity.setCreatedAt(createdAt);
         if (entity.getUpdatedAt() == null) {
-            entity.setUpdatedAt(at);
+            entity.setUpdatedAt(createdAt);
         }
         em.persist(entity);
         return entity;
     }
 
-    /** Detached entities stay usable as references, so the session can be emptied to keep inserts fast. */
+    /** Empties the session so it does not grow; detached entities still work as foreign key references. */
     void endOfBatch() {
         em.flush();
         em.clear();

@@ -6,21 +6,24 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.metamodel.EntityType;
+import pl.football.seeder.random.RandomSeeder;
 
 import java.util.Comparator;
 import java.util.Map;
 
-/** Inserts the test data set into an empty database, in a single transaction. */
+/**
+ * Fills an empty database with random football data, in a single transaction. The only argument,
+ * optional, is the seed: the same seed always gives the same data.
+ */
 public final class Main {
 
-    private static final String RANDOM = "random";
     private static final long DEFAULT_SEED = 42L;
 
     private Main() {
     }
 
     private static long seedFrom(String[] args) {
-        return args.length > 1 ? Long.parseLong(args[1]) : DEFAULT_SEED;
+        return args.length > 0 ? Long.parseLong(args[0]) : DEFAULT_SEED;
     }
 
     public static void main(String[] args) {
@@ -75,11 +78,7 @@ public final class Main {
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try {
-            if (args.length > 0 && args[0].equals(RANDOM)) {
-                new DataSeeder(em, seedFrom(args)).seedAll();
-            } else {
-                new TestDataSeeder(em).seedAll();
-            }
+            new RandomSeeder(em, seedFrom(args)).seedAll();
             tx.commit();
         } catch (RuntimeException e) {
             if (tx.isActive()) {

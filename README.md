@@ -35,17 +35,17 @@ docker compose down -v
 
 The schema is only applied to an empty database, so use `down -v` after changing `ddl_script.sql`.
 
-## Test data
+## Seeding data
 
-The seeder inserts a small, consistent data set into every table using Hibernate through the JPA API.
+The seeder fills an empty database with random but consistent football data from June 2024 to 1 November 2026: real competitions, clubs and stadiums, with fictional people and matches. It uses Hibernate through the JPA API. The same seed always gives the same data; the seed is optional and defaults to 42. `specyfikacja_seedera.md` describes its rules and classes.
 
 ### In Docker (recommended)
 
 Only Docker is needed. The seeder is built and run in a container with the same JDK and Maven for everyone, and it connects to the `db` service inside the Docker network:
 
 ```bash
-docker compose run --rm --build seeder              # test data
-docker compose run --rm --build seeder random 42    # random data
+docker compose run --rm --build seeder        # seed 42
+docker compose run --rm --build seeder 7      # another seed
 ```
 
 `run` starts the database if it is not running and waits until the schema is loaded. `--build` rebuilds the image after code changes; Docker's cache makes this quick when nothing changed. The seeder is in the `seed` profile, so `docker compose up` does not start it.
@@ -56,24 +56,13 @@ This requires JDK 21 or newer; Maven is downloaded automatically by the wrapper.
 
 ```bash
 docker compose up -d
-./mvnw compile exec:java
+./mvnw compile exec:java                      # seed 42
+./mvnw compile exec:java -Dexec.args="7"      # another seed
 ```
 
 The connection settings come from `.env` or environment variables, with environment variables taking precedence. `POSTGRES_DB` and `POSTGRES_PASSWORD` are required. `DB_HOST`, `DB_PORT` and `DB_USER` default to `localhost`, `5432` and `postgres`. The seeder and `docker-compose.yml` read the same `DB_PORT`, so one value in `.env` sets both.
 
 The seeder only runs on an empty database and otherwise exits without changing anything. To seed again, reset the database with `docker compose down -v`.
-
-## Random data
-
-The random seeder builds a realistic football history from 2023 to 1 November 2026: real competitions, clubs and stadiums, with fictional people. The same seed always gives the same data. `opis_seedera.md` describes its classes and rules.
-
-Fill an empty database (the seed is optional and defaults to 42):
-
-```bash
-docker compose run --rm --build seeder random 42
-# or locally:
-./mvnw compile exec:java -Dexec.args="random 42"
-```
 
 ## Access
 

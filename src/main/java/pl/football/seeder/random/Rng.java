@@ -2,21 +2,17 @@ package pl.football.seeder.random;
 
 import net.datafaker.Faker;
 
-import java.time.Instant;
 import java.time.LocalDate;
-import java.time.ZoneOffset;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 import java.util.function.ToDoubleFunction;
 
-/**
- * The single source of randomness. Every Faker in the seeder shares {@link #random}, so one seed
- * decides everything. Plain picks and numbers go through Faker; only what Faker has no generator
- * for (Poisson, Gaussian, weighted choice) uses the Random directly.
- */
+/** The only source of randomness. Every Faker shares {@link #random}, so one seed decides everything. */
 final class Rng {
 
     final Random random;
@@ -29,7 +25,7 @@ final class Rng {
 
     /** Inclusive on both ends. */
     int between(int min, int max) {
-        return min == max ? min : faker.number().numberBetween(min, max + 1);
+        return min + random.nextInt(max - min + 1);
     }
 
     boolean chance(double probability) {
@@ -37,23 +33,29 @@ final class Rng {
     }
 
     <T> T pick(List<T> items) {
-        return faker.options().nextElement(items);
+        return items.get(random.nextInt(items.size()));
     }
 
-    <T> List<T> shuffled(List<T> items) {
+    <T> List<T> shuffled(Collection<T> items) {
         List<T> copy = new ArrayList<>(items);
         Collections.shuffle(copy, random);
         return copy;
     }
 
+    /** Up to {@code count} different items in random order. */
     <T> List<T> sample(List<T> items, int count) {
         return new ArrayList<>(shuffled(items).subList(0, Math.min(count, items.size())));
+    }
+
+    LocalDate dateBetween(LocalDate from, LocalDate to) {
+        return from.plusDays(random.nextInt((int) ChronoUnit.DAYS.between(from, to) + 1));
     }
 
     double gaussian(double mean, double deviation) {
         return mean + random.nextGaussian() * deviation;
     }
 
+    /** Knuth's method; fine for the small averages used here. */
     int poisson(double lambda) {
         double limit = Math.exp(-lambda);
         double product = random.nextDouble();
@@ -65,9 +67,9 @@ final class Rng {
         return count;
     }
 
+    /** Picks an item with probability proportional to its weight. */
     <T> T weighted(List<T> items, ToDoubleFunction<T> weight) {
-        double total = items.stream().mapToDouble(weight).sum();
-        double roll = random.nextDouble() * total;
+        double roll = random.nextDouble() * items.stream().mapToDouble(weight).sum();
         for (T item : items) {
             roll -= weight.applyAsDouble(item);
             if (roll <= 0) {
@@ -75,16 +77,5 @@ final class Rng {
             }
         }
         return items.getLast();
-    }
-
-    LocalDate dateBetween(LocalDate from, LocalDate to) {
-        Instant start = from.atStartOfDay().toInstant(ZoneOffset.UTC);
-        Instant end = to.plusDays(1).atStartOfDay().toInstant(ZoneOffset.UTC);
-        return LocalDate.ofInstant(faker.timeAndDate().between(start, end), ZoneOffset.UTC);
-    }
-
-    /** A birth date making the person between the given ages on the given day. */
-    LocalDate birthDate(LocalDate on, int minAge, int maxAge) {
-        return dateBetween(on.minusYears(maxAge + 1L).plusDays(1), on.minusYears(minAge));
     }
 }

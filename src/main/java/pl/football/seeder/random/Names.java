@@ -7,28 +7,27 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-import java.util.Set;
 
 /**
- * Turns a name culture from national_teams.csv into a person's name, always through Faker.
+ * Names by culture (the last column of national_teams.csv), always through Datafaker.
  *
- * <p>Datafaker's data needs help in three ways, all solved with the yml files in seed/names:
+ * <p>Datafaker's data needs three fixes, all made with the yml files in seed/names:
  * <ul>
- *   <li>many locales have no male list, and firstName() mixes genders (pl: "Anna") while
- *       malefirstName() silently falls back to an English list that itself contains "Patricia",
- *       so they get a male list of their own;</li>
- *   <li>many locales are not in the Latin alphabet or do not exist (Japan, Morocco, Senegal), so
- *       those cultures get complete first and last name lists;</li>
- *   <li>adding a file to an existing locale hides that locale's own data, so custom files always
- *       use a tag of their own ("xpl"), and surnames still come from the original locale.</li>
+ *   <li>many locales have no list of male first names and silently fall back to an English list
+ *       that also contains women's names, so they get a male list of their own;</li>
+ *   <li>some cultures have no Latin-alphabet locale at all (Japan, Morocco, Senegal), so they get
+ *       complete first and last name lists;</li>
+ *   <li>a file added to an existing locale hides that locale's own data, so custom files use a tag
+ *       of their own ("xpl") and surnames still come from the original locale ("pl").</li>
  * </ul>
- * A culture missing from {@link #CULTURES} stops the seeder rather than quietly giving English names.
+ * An unknown culture stops the seeder instead of quietly giving English names.
  */
-final class NameFactory {
+final class Names {
 
     record Person(String firstName, String lastName) {
     }
 
+    /** Where a culture takes its first names, its last names, and under which key the last names are. */
     private record Source(String firstLocale, String lastLocale, String lastKey) {
     }
 
@@ -53,6 +52,7 @@ final class NameFactory {
             Map.entry("et", new Source("et", "et", LAST)),
             Map.entry("tr", new Source("tr", "tr", LAST)),
             Map.entry("sq", new Source("sq", "sq", LAST)),
+            // Czech and Slovak surnames have a female form, so the male list is read directly.
             Map.entry("cs", new Source("cs-CZ", "cs-CZ", "name.male_last_name")),
             Map.entry("sk", new Source("sk", "sk", "name.man_last_name")),
             Map.entry("ro", new Source("xro", "xro", LAST)),
@@ -71,19 +71,13 @@ final class NameFactory {
             Map.entry("xwa", new Source("xwa", "xwa", LAST)),
             Map.entry("xea", new Source("xea", "xea", LAST)));
 
-    private static final List<String> CUSTOM_TAGS = List.of("xen", "xpl", "xfr", "xit", "xnl", "xhr", "xro", "xeu", "xge",
-            "xgr", "xil", "xjp", "xkr", "xar", "xir", "xca", "xcn", "xin", "xsa", "xwa", "xea");
-
     /** Editors are not tied to a country and may be of any gender. */
     private static final List<String> EDITOR_LOCALES = List.of("de", "es", "fr", "it", "en", "nl", "pt-BR", "cs-CZ");
-
-    /** Filed under men in Datafaker's own list for a locale we otherwise use as it is. */
-    private static final Set<String> WOMEN_IN_MALE_LISTS = Set.of("Júlia");
 
     private final Rng rng;
     private final Map<String, Faker> fakers = new HashMap<>();
 
-    NameFactory(Rng rng) {
+    Names(Rng rng) {
         this.rng = rng;
     }
 
@@ -92,12 +86,8 @@ final class NameFactory {
         if (source == null) {
             throw new IllegalArgumentException("No name source for culture " + culture);
         }
-        String first;
-        do {
-            first = clean(faker(source.firstLocale()).resolve(MALE_FIRST));
-        } while (WOMEN_IN_MALE_LISTS.contains(first));
-        String last = clean(faker(source.lastLocale()).resolve(source.lastKey()));
-        return new Person(first, last);
+        return new Person(clean(faker(source.firstLocale()).resolve(MALE_FIRST)),
+                clean(faker(source.lastLocale()).resolve(source.lastKey())));
     }
 
     Person editor() {
@@ -105,6 +95,7 @@ final class NameFactory {
         return new Person(clean(faker.name().firstName()), clean(faker.name().lastName()));
     }
 
+    /** One Faker per locale, created on first use; all share the seeded Random. */
     private Faker faker(String tag) {
         return fakers.computeIfAbsent(tag, this::newFaker);
     }
@@ -112,8 +103,8 @@ final class NameFactory {
     private Faker newFaker(String tag) {
         Locale locale = Locale.forLanguageTag(tag);
         Faker faker = new Faker(locale, rng.random);
-        if (CUSTOM_TAGS.contains(tag)) {
-            URL url = NameFactory.class.getResource("/seed/names/" + tag + ".yml");
+        if (tag.startsWith("x")) {
+            URL url = Names.class.getResource("/seed/names/" + tag + ".yml");
             if (url == null) {
                 throw new IllegalStateException("Missing name file for " + tag);
             }
@@ -122,7 +113,7 @@ final class NameFactory {
         return faker;
     }
 
-    /** Some Datafaker entries carry invisible characters, e.g. a zero-width space in the hr surnames. */
+    /** Some Datafaker entries carry invisible characters, e.g. a zero-width space in Croatian surnames. */
     private static String clean(String name) {
         return name.replaceAll("\\p{Cf}", "").trim();
     }
