@@ -1,3 +1,6 @@
+CREATE EXTENSION IF NOT EXISTS pg_trgm;
+CREATE EXTENSION IF NOT EXISTS btree_gist;
+
 -- Relacje geograficzne i organizacyjne
 CREATE INDEX IF NOT EXISTS idx_competition_region ON Competition (region_id);
 CREATE INDEX IF NOT EXISTS idx_edition_competition ON Edition (competition_id);
@@ -45,31 +48,32 @@ CREATE INDEX IF NOT EXISTS idx_permission_assignment_editor ON PermissionAssignm
 CREATE INDEX IF NOT EXISTS idx_permission_assignment_permission ON PermissionAssignment (permission_id);
 
 
--- 2. INDEKSY CZĘŚCIOWE (PARTIAL INDEXES) - Optymalizacja pod analitykę
-CREATE INDEX IF NOT EXISTS idx_match_finished_analysis 
-    ON Match (stage_id, scheduled_at) 
+CREATE INDEX IF NOT EXISTS idx_match_finished_analysis
+    ON Match (stage_id, scheduled_at)
+    INCLUDE (home_team_id, away_team_id, home_goals, away_goals)
     WHERE status = 'finished';
 
--- Szybka analiza dyscyplinarna sędziów (zapytanie p_referee_strictness.sql)
-CREATE INDEX IF NOT EXISTS idx_match_referee_finished 
-    ON Match (referee_id) 
+CREATE INDEX IF NOT EXISTS idx_match_referee_finished
+    ON Match (referee_id)
     WHERE status = 'finished';
 
--- Zdarzenia meczowe, które nie zostały anulowane przez VAR/sędziego
-CREATE INDEX IF NOT EXISTS idx_matchevent_active_type 
-    ON MatchEvent (event_type_id, minute) 
+CREATE INDEX IF NOT EXISTS idx_matchevent_active_type
+    ON MatchEvent (event_type_id, minute)
     WHERE is_cancelled = false;
 
+CREATE INDEX IF NOT EXISTS idx_injury_date_range
+    ON Injury USING gist (player_id, daterange(start_date, end_date, '[]'));
 
+CREATE INDEX IF NOT EXISTS idx_transfer_date_amount
+    ON Transfer USING brin (transfer_date) WITH (pages_per_range = 16);
 
-CREATE INDEX IF NOT EXISTS idx_injury_date_range 
-    ON Injury (player_id, start_date, end_date);
+CREATE INDEX IF NOT EXISTS idx_player_name_lower
+    ON Player USING gin (last_name gin_trgm_ops, first_name gin_trgm_ops);
 
-CREATE INDEX IF NOT EXISTS idx_transfer_date_amount 
-    ON Transfer (transfer_date, amount);
-
-CREATE INDEX IF NOT EXISTS idx_player_name_lower 
-    ON Player (LOWER(last_name), LOWER(first_name));
-
-CREATE INDEX IF NOT EXISTS idx_player_position 
+CREATE INDEX IF NOT EXISTS idx_player_position
     ON Player (primary_position);
+
+VACUUM (ANALYZE) Match;
+VACUUM (ANALYZE) Injury;
+VACUUM (ANALYZE) Transfer;
+VACUUM (ANALYZE) Player;
